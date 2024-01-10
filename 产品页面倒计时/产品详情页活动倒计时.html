@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="countdown-expiration-timer">
+        <div id="countdown" class="message"><i class="deal-clock-icon"></i><span>Deal ends in 2:40:22</span></div>
+    </div>
+    <script>
+        (function () {
+            // 倒计时目标日期和时间 中国时间 2022-01-15T16:00:00 中间的"T"是间隔
+            var targetDate = new Date("2024-01-15T16:00:00");
+            
+
+            // 获取倒计时元素
+            var countdownElement = document.getElementById("countdown");
+
+            // 更新倒计时
+            function updateCountdown() {
+                var currentTime = new Date().getTime();
+                var timeDifference = targetDate - currentTime;
+
+                // 倒计时已结束，移除元素
+                if (timeDifference <= 0) {
+                    countdownElement.parentNode.removeChild(countdownElement);
+                    return;
+                }
+
+                // 计算剩余的天、小时、分钟和秒数
+                var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+                // 将倒计时值更新到 DOM 元素中
+                countdownElement.innerHTML = "Deal ends in " + days + " days " + hours + " : " + minutes + " : " + seconds;
+
+                // 每秒更新一次倒计时
+                setTimeout(updateCountdown, 1000);
+            }
+
+            // 初始化倒计时
+            updateCountdown();
+        })();
+    </script>
+</body>
+
+</html>
