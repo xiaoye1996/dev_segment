@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #content {
+        display: none; /* 初始状态为隐藏 */
+      } 
+    </style>
+    <div>
+      <div id="content">这里是要展示或隐藏的内容</div>
+      <button onclick="toggleContent()">点击切换显示/隐藏</button>
+    </div>
+  </body>
+  <script>
+    function toggleContent() {
+      var content = document.getElementById("content"); // 获取需要展开或折叠的元素
+      if (content.style.display === "none") {
+        // 如果当前处于隐藏状态
+        content.style.display = "block"; // 则将其设置为显示状态
+      } else {
+        // 否则
+        content.style.display = "none"; // 则将其设置为隐藏状态
+      }
+    }
+  </script>
+</html>
