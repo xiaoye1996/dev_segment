@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .product-comparison ul,
+    .product-comparison ul li {
+      padding: 0 !important;
+      margin: 0 !important;
+      list-style: none;
+    }
+    .product-comparison .info-header {
+      position: relative;
+      border-bottom: 1px solid #ececec;
+    }
+    .product-comparison .info-header .info-title {
+      font-size: 2.5rem;
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      margin: 0;
+    }
+    .product-comparison .info-row {
+      display: flex;
+    }
+    .product-comparison .info-item {
+      height: 120px;
+      padding: 20px 20px !important;
+      border-bottom: 1px solid #ececec;
+    }
+
+    .product-comparison .info-item-long {
+      height: 110px;
+    }
+    .product-comparison .info-item-xlong {
+      height: 120px;
+    }
+    .product-comparison .info-row .info-col {
+      flex: 1 0 33.333%;
+    }
+    .product-comparison .info-item-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #fff;
+      height: 300px;
+    }
+    .product-comparison .info-item-img img {
+      height: calc(100% - 68px);
+      object-fit: contain;
+      margin: 0;
+    }
+    .product-comparison .info-item .comparison-title {
+      margin: 0 10px 10px 0;
+      opacity: 0.8;
+      white-space: nowrap;
+    }
+    .product-comparison .info-item a {
+      text-align: center;
+      font-size: 14px;
+      width: 100%;
+      display: block;
+      color: #000;
+      padding: 10px 4px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #265fff;
+    }
+    .product-comparison .info-item a:hover {
+    }
+    .product-comparison
+      .info-row
+      .info-col
+      .info
+      .info-item
+      .comparison-detail {
+      margin: 5px;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .product-comparison .info-row {
+        overflow-x: scroll;
+      }
+      .product-comparison .info-item-img {
+        height: 250px;
+      }
+      .product-comparison .info-item-img img {
+        height: calc(100% - 78px) !important;
+      }
+      .product-comparison .info-item {
+        font-size: 14px;
+        height: 100px;
+        padding: 18px 0 0 0 !important;
+      }
+      .product-comparison .info-item-long {
+        height: 120px;
+      }
+      .product-comparison .info-item-xlong {
+        height: 168px;
+      }
+    }
+  </style>
+  <body>
+    <div class="product-comparison">
+      <div class="info-item__col" type="Dimensions and Weight" data-index="1">
+        <div class="info-header">
+          <h2 class="info-title">Overview</h2>
+        </div>
+        <div class="info-row">
+          <div class="info-col model-1">
+            <ul class="info">
+              <li class="info-item info-item-img" data-index="0">
+                <h3 class="comparison-title">CIRCOOTER Mate</h3>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0622/9757/1557/files/Mate-03.webp?v=1710984786"
+                  alt="CIRCOOTER Mate"
+                />
+                <a
+                  href="https://www.circooter.com/products/mate-commuting-electric-scooter-for-adult"
+                  >BUY&ensp;></a
+                >
+              </li>
+              <li class="info-item info-item-xlong" data-index="0">
+                <h3 class="comparison-title">For Whom?</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    Riders who want to try a fast, exciting ride.
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Long Range Battery</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">48V 12.5Ah</p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Maximum Load</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">440 LB / 200 KG</p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Powerful Motor</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">800 W</p>
+                </div>
+              </li>
+              <li class="info-item info-item-long" data-index="0">
+                <h3 class="comparison-title">Top Speed</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    25 - 28 MPH / 35-40 KM/H
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Max. Range</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    21-25 Miles / 35-40 K
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Hill Climbing</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">20% - 25% GradeM</p>
+                </div>
+              </li>
+              <li class="info-item info-item-long" data-index="0">
+                <h3 class="comparison-title">Suspension</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    Front & Rear Suspensions
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Charging Ports</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">1 ports</p>
+                </div>
+              </li>
+
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Tire Type</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    10'' Off Road Solid Tires
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title">Charging Time</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">5-6 H</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="info-col model-2">
+            <ul class="info">
+              <li class="info-item info-item-img" data-index="0">
+                <h3 class="comparison-title">CIRCOOTER Raptor</h3>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0622/9757/1557/files/Raptor-03.webp?v=1710984786"
+                  alt="CIRCOOTER Raptor"
+                />
+                <a
+                  href="https://www.circooter.com/products/raptor-off-road-camping-adult-e-scooter"
+                  >BUY&ensp;></a
+                >
+              </li>
+
+              <li class="info-item info-item-xlong" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">For Whom?</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    An adventurer eager to experience the thrill of powerful,
+                    high-speed rides.
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Long Range Battery
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">48V 15Ah</p>
+                </div>
+              </li>
+
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Maximum Load
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">440 LB / 200 KG</p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Powerful Motor
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">Peak 1000W</p>
+                </div>
+              </li>
+              <li class="info-item info-item-long" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Top Speed</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    25 - 28 MPH / 35-40 KM/H
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Max. Range</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    21-25 Miles / 35-40 K
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Hill Climbing
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">25% - 30% Grade</p>
+                </div>
+              </li>
+              <li class="info-item info-item-long" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Suspension</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    Front & Rear Suspensions
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Charging Ports
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">2 ports</p>
+                </div>
+              </li>
+
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Tire Type</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    10'' Off Road Solid Tires
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Charging Time
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    7-8 H with 1 charger
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="info-col model-3">
+            <ul class="info">
+              <li class="info-item info-item-img" data-index="0">
+                <h3 class="comparison-title">CIRCOOTER Raptor Pro</h3>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0622/9757/1557/files/RaptorPro-03.webp?v=1710984786"
+                  alt="CIRCOOTER Raptor Pro"
+                />
+                <a
+                  href="https://www.circooter.com/products/raptor-pro-folding-off-road-electric-scooter-camping-scooter"
+                  >BUY&ensp;></a
+                >
+              </li>
+
+              <li class="info-item info-item-xlong" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">For Whom?</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    Those who are larger and have a higher need for strength,
+                    speed and off-road intensity.
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Long Range Battery
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">48V 20Ah</p>
+                </div>
+              </li>
+
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Maximum Load
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">440 LB / 200 KG</p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Powerful Motor
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">1600 W</p>
+                </div>
+              </li>
+              <li class="info-item info-item-long" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Top Speed</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    25 - 28 MPH / 35-40 KM/H
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Max. Range</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    28-31 Miles / 45-50 KM
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Hill Climbing
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">25% - 30% Grade</p>
+                </div>
+              </li>
+              <li class="info-item info-item-long" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Suspension</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    Front & Rear Suspensions
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Charging Ports
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">2 ports</p>
+                </div>
+              </li>
+
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">Tire Type</h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    10'' Off Road Solid Tires
+                  </p>
+                </div>
+              </li>
+              <li class="info-item" data-index="0">
+                <h3 class="comparison-title" style="opacity: 0">
+                  Charging Time
+                </h3>
+                <div class="comparison-detail" style="height: 24px">
+                  <p style="opacity: 0.6" class="info-gray">
+                    8-9 H with 1 charger
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
